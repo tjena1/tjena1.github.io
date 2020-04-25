@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 4 - Chat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+</head>
+<body>
+    <h2 class="center" style="font-weight: bold">Chat room</h2>
+    <div style="padding-bottom: 2rem" class="center">
+        <button  onclick="orientationDetection()">Set orientation</button>
+    </div>
+    <div class="container">
+        <div>
+            <input class="message" type="text" name="msg" placeholder="Write message">
+            <button id="msg-button" onclick="sendMsg();">Send Message</button>
+        </div>
+        <div>
+            <h3 id="channelName"></h3>
+            <div id ="get"></div>
+        </div>
+    </div>
+    <div style="margin-left:10rem;">
+        <div id="testing"></div>
+        <div id="getLocation">n/a</div>
+    </div>
+</body>
+</html>
